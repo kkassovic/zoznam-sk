@@ -7,14 +7,14 @@ from openpyxl import Workbook, load_workbook
 
 BASE_URL = "https://www.zoznam.sk"
 LETTERS = ["Q", "Y"]  # 👈 Letters to scrape
-REGION = "Trenciansky-kraj"
-KRAJ = "6"  # Region code (fixed for region)
+REGION = "Trenciansky-kraj" # 👈
+KRAJ = "6"  # 👈 Region code (fixed for region)
 
 CSV_FILE = "C:\\Users\\karol\\OneDrive\\Desktop\\companies.csv"
 EXCEL_FILE = "C:\\Users\\karol\\OneDrive\\Desktop\\companies-trencin-multiple.xlsx"
 
 START_PAGE = 1
-END_PAGE = 100
+END_PAGE = 100 # 👈 tento počet stránok pre jedno písmeno by mal stačiť aj pre "silné" kraje ako napr. bratislavsky. Netreba teda meniť...
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
